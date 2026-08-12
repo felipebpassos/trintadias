@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b1120" />
+    <meta name="color-scheme" content="dark" />
+
+    <!-- ===================== SEO ===================== -->
+    <title>30 Dias Para Sair do Fundo do Poço | Programa de 30 dias</title>
+    <meta
+      name="description"
+      content="Programa de 30 dias para quem quer largar as drogas ou o álcool e para a família que não sabe mais o que fazer. Um passo por dia, com começo, meio e fim. Acesso pelo celular."
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="30 Dias Para Sair do Fundo do Poço" />
+    <link rel="canonical" href="https://SEUDOMINIO.com.br/trintadias/" />
+
+    <!-- Open Graph (WhatsApp / Facebook / Instagram) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="30 Dias Para Sair do Fundo do Poço" />
+    <meta
+      property="og:title"
+      content="30 Dias Para Sair do Fundo do Poço"
+    />
+    <meta
+      property="og:description"
+      content="Um caminho simples, dia após dia, para quem quer parar — e para a família que já não sabe o que fazer."
+    />
+    <meta property="og:url" content="https://SEUDOMINIO.com.br/trintadias/" />
+    <meta
+      property="og:image"
+      content="https://SEUDOMINIO.com.br/trintadias/img/og-cover.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="30 Dias Para Sair do Fundo do Poço"
+    />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="30 Dias Para Sair do Fundo do Poço" />
+    <meta
+      name="twitter:description"
+      content="Um caminho simples, dia após dia, para quem quer parar — e para a família que já não sabe o que fazer."
+    />
+    <meta
+      name="twitter:image"
+      content="https://SEUDOMINIO.com.br/trintadias/img/og-cover.jpg"
+    />
+
+    <!-- Favicon inline (troque por /img/favicon.ico quando tiver a arte) -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230b1120'/><text x='50' y='70' font-size='58' font-family='Arial' font-weight='bold' text-anchor='middle' fill='%23f59e0b'>30</text></svg>"
+    />
+
+    <!-- ===================== Fontes ===================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ===================== Tailwind ===================== -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+      body {
+        font-family: "Montserrat", system-ui, -apple-system, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      /* Vídeo responsivo 16:9 */
+      .video-wrap {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        overflow: hidden;
+      }
+      .video-wrap iframe,
+      .video-wrap img,
+      .video-wrap button {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+      /* Animação de entrada */
+      .fade-in-element {
+        opacity: 0;
+        transform: translateY(18px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      }
+      .fade-in-element.is-visible {
+        opacity: 1;
+        transform: none;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .fade-in-element {
+          opacity: 1;
+          transform: none;
+          transition: none;
+        }
+        html {
+          scroll-behavior: auto;
+        }
+      }
+      /* Pulso suave no CTA */
+      @keyframes ctaPulse {
+        0%,
+        100% {
+          box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.45);
+        }
+        50% {
+          box-shadow: 0 0 0 14px rgba(245, 158, 11, 0);
+        }
+      }
+      .cta-pulse {
+        animation: ctaPulse 2.6s infinite;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .cta-pulse {
+          animation: none;
+        }
+      }
+      details > summary {
+        list-style: none;
+        cursor: pointer;
+      }
+      details > summary::-webkit-details-marker {
+        display: none;
+      }
+      details[open] .faq-icon {
+        transform: rotate(45deg);
+      }
+    </style>
+
+    <!-- ===================== JSON-LD ===================== -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "30 Dias Para Sair do Fundo do Poço",
+        "description": "Programa de 30 dias para dependentes químicos e seus familiares. Um passo por dia, com começo, meio e fim.",
+        "brand": {
+          "@type": "Brand",
+          "name": "30 Dias Para Sair do Fundo do Poço"
+        },
+        "url": "https://SEUDOMINIO.com.br/trintadias/",
+        "image": "https://SEUDOMINIO.com.br/trintadias/img/og-cover.jpg",
+        "offers": {
+          "@type": "Offer",
+          "price": "97.00",
+          "priceCurrency": "BRL",
+          "availability": "https://schema.org/InStock",
+          "url": "https://SEUDOMINIO.com.br/trintadias/"
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Isso é tratamento médico?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Não. É um programa de apoio, com orientação prática dia a dia. Ele não substitui médico, psicólogo, CAPS, internação ou qualquer tratamento de saúde. Pode ser feito junto com eles."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Serve para quem usa ou para a família?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Para os dois. Uma parte é para quem quer parar e outra é para quem convive e não sabe mais o que fazer. Pode ser feito junto ou separado."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Preciso de computador?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Não. Funciona no celular, com internet simples. É só entrar e seguir o passo do dia."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "E se eu já tentei parar e não consegui?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "É justamente para isso. O programa parte do zero, sem julgamento, com um passo pequeno por dia em vez de uma promessa grande de uma vez só."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quando recebo o acesso?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Logo após a confirmação do pagamento, o acesso chega no seu e-mail e você já pode começar o Dia 1."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+
+  <body class="bg-slate-950 text-slate-100 antialiased">
+    <!-- ============================================================
+         DOBRA 1 — HERO (título + vídeo + CTA)
+    ============================================================ -->
+    <header
+      class="relative overflow-hidden bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950"
+    >
+      <div
+        class="pointer-events-none absolute -top-32 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-amber-500/20 blur-3xl"
+        aria-hidden="true"
+      ></div>
+
+      <div class="relative mx-auto max-w-3xl px-5 pb-14 pt-10 sm:pt-14">
+
+        <h1
+          class="text-center text-3xl font-black leading-tight sm:text-4xl md:text-5xl"
+        >
+          30 dias para sair do
+          <span class="text-amber-400">fundo do poço</span>
+        </h1>
+
+        <p
+          class="mx-auto mt-5 max-w-xl text-center text-base leading-relaxed text-slate-300 sm:text-lg"
+        >
+          Um passo por dia, para quem quer largar o mal da dependência química — e para a família que já não sabe mais o que fazer.
+        </p>
+
+        <!-- VÍDEO -->
+        <div class="mt-8">
+          <div
+            class="video-wrap rounded-2xl border border-slate-800 bg-slate-900 shadow-2xl shadow-black/50"
+            id="video-facade"
+          >
+            <!-- Thumb do YouTube (carrega o player só no clique = página mais rápida) -->
+            <img
+              id="video-thumb"
+              src=""
+              alt="Assista ao vídeo de apresentação do programa 30 dias para sair do fundo do poço"
+              class="h-full w-full object-cover opacity-70"
+              loading="eager"
+              decoding="async"
+            />
+            <button
+              type="button"
+              id="video-play"
+              class="group flex items-center justify-center bg-slate-950/40 transition hover:bg-slate-950/20"
+              aria-label="Reproduzir vídeo"
+            >
+              <span
+                class="flex h-16 w-16 items-center justify-center rounded-full bg-amber-500 shadow-xl transition group-hover:scale-110 sm:h-20 sm:w-20"
+              >
+                <svg
+                  class="ml-1 h-7 w-7 text-slate-950 sm:h-9 sm:w-9"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </span>
+            </button>
+          </div>
+          <p class="mt-3 text-center text-xs text-slate-500">
+            Assista antes de decidir. São poucos minutos.
+          </p>
+        </div>
+
+        <!-- CTA -->
+        <div class="mt-8">
+          <a
+            id="pay1"
+            href="#"
+            data-checkout
+            class="cta-pulse block w-full rounded-xl bg-amber-500 px-6 py-4 text-center text-base font-extrabold uppercase tracking-wide text-slate-950 transition hover:bg-amber-400 sm:text-lg"
+          >
+            Quero começar meus 30 dias
+          </a>
+          <p class="mt-3 text-center text-xs text-slate-400 sm:text-sm">
+            Acesso imediato • Funciona no celular • Sozinho ou com a família
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!-- ============================================================
+         DOBRA 2 — IDENTIFICAÇÃO / PARA QUEM É
+    ============================================================ -->
+    <section class="bg-slate-950 px-5 py-14 sm:py-20" id="para-quem">
+      <div class="mx-auto max-w-3xl">
+        <h2
+          class="fade-in-element text-center text-2xl font-black leading-tight sm:text-3xl md:text-4xl"
+        >
+          Você não chegou até aqui por acaso...
+        </h2>
+        <p
+          class="fade-in-element mx-auto mt-4 max-w-xl text-center text-slate-300"
+        >
+          Se alguma dessas frases parece ter sido escrita pra você, continue
+          lendo.
+        </p>
+
+        <div class="mt-10 grid gap-5 md:grid-cols-2">
+          <!-- Quem usa -->
+          <div
+            class="fade-in-element rounded-2xl border border-slate-800 bg-slate-900/60 p-6"
+          >
+            <h3 class="text-lg font-extrabold text-amber-400">
+              Se é você quem está usando
+            </h3>
+            <ul class="mt-4 space-y-3 text-sm leading-relaxed text-slate-300">
+              <li class="flex gap-3">
+                <span class="text-amber-500">›</span>
+                <span
+                  >Você já prometeu parar. Prometeu de novo. E de novo.</span
+                >
+              </li>
+              <li class="flex gap-3">
+                <span class="text-amber-500">›</span>
+                <span
+                  >Acorda arrependido, e à noite está tudo igual outra
+                  vez.</span
+                >
+              </li>
+              <li class="flex gap-3">
+                <span class="text-amber-500">›</span>
+                <span
+                  >Perdeu emprego, dinheiro, respeito, gente que te amava.</span
+                >
+              </li>
+              <li class="flex gap-3">
+                <span class="text-amber-500">›</span>
+                <span
+                  >Tem vergonha de pedir ajuda e medo de tentar e falhar de
+                  novo.</span
+                >
+              </li>
+              <li class="flex gap-3">
+                <span class="text-amber-500">›</span>
+                <span
+                  >No fundo, você sabe onde isso vai terminar se continuar.</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Família -->
+          <div
+            class="fade-in-element rounded-2xl border border-slate-800 bg-slate-900/60 p-6"
+          >
+            <h3 class="text-lg font-extrabold text-amber-400">
+              Se é a sua família que está sofrendo
+            </h3>
+            <ul class="mt-4 space-y-3 text-sm leading-relaxed text-slate-300">
+              <li class="flex gap-3">
+                <span class="text-amber-500">›</span>
+                <span>Você não dorme direito esperando ele chegar.</span>
+              </li>
+              <li class="flex gap-3">
+                <span class="text-amber-500">›</span>
+                <span
+                  >Já tentou conversar, brigar, chorar, ameaçar. Nada mudou.</span
+                >
+              </li>
+              <li class="flex gap-3">
+                <span class="text-amber-500">›</span>
+                <span
+                  >Some dinheiro, some coisa dentro de casa, e você finge que
+                  não vê.</span
+                >
+              </li>
+              <li class="flex gap-3">
+                <span class="text-amber-500">›</span>
+                <span
+                  >Não sabe se ajuda ou se afasta — e se sente culpada dos dois
+                  jeitos.</span
+                >
+              </li>
+              <li class="flex gap-3">
+                <span class="text-amber-500">›</span>
+                <span>Está adoecendo junto, sem ninguém pra te orientar.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <p
+          class="fade-in-element mx-auto mt-8 max-w-xl rounded-xl border border-amber-500/30 bg-amber-500/10 p-5 text-center text-sm font-semibold leading-relaxed text-amber-100 sm:text-base"
+        >
+          🙏 Não é falta de vergonha na cara. É falta de um caminho claro. É exatamente isso que você vai receber aqui.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         DOBRA 3 — COMO FUNCIONA (os 30 dias)
+    ============================================================ -->
+    <section
+      class="bg-gradient-to-b from-slate-900 to-slate-950 px-5 py-14 sm:py-20"
+      id="como-funciona"
+    >
+      <div class="mx-auto max-w-3xl">
+        <h2
+          class="fade-in-element text-center text-2xl font-black leading-tight sm:text-3xl md:text-4xl"
+        >
+          30 dias. Um passo por dia.<br class="hidden sm:block" />
+          <span class="text-amber-400">Com começo, meio e fim.</span>
+        </h2>
+        <p
+          class="fade-in-element mx-auto mt-4 max-w-xl text-center text-slate-300"
+        >
+          Nada de teoria complicada. Todo dia você abre, entende o que fazer e
+          faz. É curto de propósito — pra caber num dia difícil.
+        </p>
+
+        <div class="mt-10 space-y-4">
+          <!-- Semana 1 -->
+          <div
+            class="fade-in-element flex gap-4 rounded-2xl border border-slate-800 bg-slate-900/60 p-5"
+          >
+            <div
+              class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-amber-500 text-sm font-black text-slate-950"
+            >
+              1-7
+            </div>
+            <div>
+              <h3 class="font-extrabold text-slate-100">
+                Encarar a verdade sem se destruir
+              </h3>
+              <p class="mt-1 text-sm leading-relaxed text-slate-400">
+                Onde você está de verdade hoje, o tamanho real do problema e por
+                que as tentativas anteriores não pararam de pé. Aqui a culpa sai
+                do caminho e a decisão entra.
+              </p>
+            </div>
+          </div>
+
+          <!-- Semana 2 -->
+          <div
+            class="fade-in-element flex gap-4 rounded-2xl border border-slate-800 bg-slate-900/60 p-5"
+          >
+            <div
+              class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-amber-500 text-sm font-black text-slate-950"
+            >
+              8-14
+            </div>
+            <div>
+              <h3 class="font-extrabold text-slate-100">
+                Sair da linha de tiro
+              </h3>
+              <p class="mt-1 text-sm leading-relaxed text-slate-400">
+                Gatilhos, lugares, horários e pessoas que sempre te levam de
+                volta. Você monta um plano prático pros momentos de fissura — o
+                que fazer nos primeiros 10 minutos.
+              </p>
+            </div>
+          </div>
+
+          <!-- Semana 3 -->
+          <div
+            class="fade-in-element flex gap-4 rounded-2xl border border-slate-800 bg-slate-900/60 p-5"
+          >
+            <div
+              class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-amber-500 text-sm font-black text-slate-950"
+            >
+              15-22
+            </div>
+            <div>
+              <h3 class="font-extrabold text-slate-100">
+                Reconstruir o básico
+              </h3>
+              <p class="mt-1 text-sm leading-relaxed text-slate-400">
+                Sono, comida, corpo, dinheiro, ocupação e as contas que ficaram
+                pra trás. Um dia vazio é perigoso — aqui a rotina volta a ter
+                chão.
+              </p>
+            </div>
+          </div>
+
+          <!-- Semana 4 -->
+          <div
+            class="fade-in-element flex gap-4 rounded-2xl border border-slate-800 bg-slate-900/60 p-5"
+          >
+            <div
+              class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-amber-500 text-sm font-black text-slate-950"
+            >
+              23-30
+            </div>
+            <div>
+              <h3 class="font-extrabold text-slate-100">
+                Segurar o que você conquistou
+              </h3>
+              <p class="mt-1 text-sm leading-relaxed text-slate-400">
+                Como reagir a um escorregão sem jogar tudo fora, quem chamar na
+                hora ruim, como reconstruir a confiança de quem você machucou e
+                qual é o seu plano para os próximos 90 dias.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- O que você recebe -->
+        <div
+          class="fade-in-element mt-10 rounded-2xl border border-slate-800 bg-slate-900 p-6"
+        >
+          <h3 class="text-center text-lg font-extrabold sm:text-xl">
+            O que você recebe
+          </h3>
+          <ul class="mt-5 grid gap-3 text-sm text-slate-300 sm:grid-cols-2">
+            <li class="flex gap-3">
+              <span class="font-bold text-emerald-400">✓</span>
+              <span>Os 30 passos, um para cada dia, na ordem certa</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="font-bold text-emerald-400">✓</span>
+              <span>Trilha separada para o familiar que quer ajudar</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="font-bold text-emerald-400">✓</span>
+              <span>Plano de emergência para a hora da fissura</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="font-bold text-emerald-400">✓</span>
+              <span>Linguagem simples, direta, sem enrolação</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="font-bold text-emerald-400">✓</span>
+              <span>Acesso pelo celular, na hora que der</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="font-bold text-emerald-400">✓</span>
+              <span>Pode refazer os 30 dias quantas vezes precisar</span>
+            </li>
+          </ul>
+
+          <a
+            id="pay2"
+            href="#"
+            data-checkout
+            class="mt-7 block w-full rounded-xl bg-amber-500 px-6 py-4 text-center text-base font-extrabold uppercase tracking-wide text-slate-950 transition hover:bg-amber-400"
+          >
+            Começar o dia 1 hoje
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         DOBRA 4 — QUEM CONDUZ + PROVAS
+    ============================================================ -->
+    <section class="bg-slate-950 px-5 py-14 sm:py-20" id="quem-conduz">
+      <div class="mx-auto max-w-3xl">
+        <div
+          class="fade-in-element rounded-2xl border border-slate-800 bg-slate-900/60 p-6 sm:p-8"
+        >
+          <h2 class="text-2xl font-black leading-tight sm:text-3xl">
+            Quem vai falar com você aqui
+          </h2>
+          <p class="mt-4 text-sm leading-relaxed text-slate-300 sm:text-base">
+            Você não vai ouvir alguém falando de longe, com palavra difícil,
+            sobre uma dor que nunca sentiu na pele. Aqui a conversa é de igual
+            para igual: sem sermão, sem julgamento e sem aquela promessa boba de
+            que é fácil.
+          </p>
+          <p class="mt-4 text-sm leading-relaxed text-slate-300 sm:text-base">
+            O que existe é um caminho que já foi percorrido, organizado em 30
+            passos, para que você não precise descobrir tudo sozinho — nem
+            recomeçar do zero toda segunda-feira.
+          </p>
+          <p
+            class="mt-5 rounded-xl border border-slate-700 bg-slate-950/60 p-4 text-xs leading-relaxed text-slate-400"
+          >
+            <strong class="text-slate-300">Importante:</strong> este é um
+            programa de apoio e orientação prática. Ele não é tratamento médico
+            ou psicológico e não substitui acompanhamento profissional. Pode e
+            deve caminhar junto com ele.
+          </p>
+        </div>
+
+        <!-- DEPOIMENTOS -->
+        <!-- ==========================================================
+             ATENÇÃO: substitua os textos abaixo por DEPOIMENTOS REAIS
+             (com autorização de quem falou). Se ainda não tiver,
+             apague este bloco inteiro em vez de publicar exemplos.
+        ========================================================== -->
+        <h3
+          class="fade-in-element mt-12 text-center text-xl font-black sm:text-2xl"
+        >
+          Quem já começou
+        </h3>
+        <div class="mt-6 grid gap-4 sm:grid-cols-2">
+          <figure
+            class="fade-in-element rounded-2xl border border-slate-800 bg-slate-900/60 p-5"
+          >
+            <blockquote class="text-sm leading-relaxed text-slate-300">
+              [DEPOIMENTO REAL 1 — cole aqui o texto exato que a pessoa
+              enviou.]
+            </blockquote>
+            <figcaption class="mt-3 text-xs font-semibold text-amber-400">
+              [Nome], [cidade/UF]
+            </figcaption>
+          </figure>
+          <figure
+            class="fade-in-element rounded-2xl border border-slate-800 bg-slate-900/60 p-5"
+          >
+            <blockquote class="text-sm leading-relaxed text-slate-300">
+              [DEPOIMENTO REAL 2 — de preferência de um familiar.]
+            </blockquote>
+            <figcaption class="mt-3 text-xs font-semibold text-amber-400">
+              [Nome], [cidade/UF]
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         DOBRA 5 — OFERTA + FAQ + CTA FINAL
+    ============================================================ -->
+    <section
+      class="bg-gradient-to-b from-slate-900 to-slate-950 px-5 py-14 sm:py-20"
+      id="oferta"
+    >
+      <div class="mx-auto max-w-3xl">
+        <div
+          class="fade-in-element rounded-2xl border-2 border-amber-500/60 bg-slate-900 p-6 text-center shadow-2xl shadow-amber-900/20 sm:p-8"
+        >
+          <p
+            class="text-xs font-bold uppercase tracking-[0.2em] text-amber-400"
+          >
+            Comece hoje
+          </p>
+          <h2 class="mt-3 text-2xl font-black leading-tight sm:text-3xl">
+            30 dias para sair do fundo do poço
+          </h2>
+
+          <p class="mt-6 text-sm text-slate-400">
+            <span class="line-through">De R$ 197</span> por apenas
+          </p>
+          <p class="mt-1 text-4xl font-black text-amber-400 sm:text-5xl">
+            R$ 97
+          </p>
+          <p class="mt-1 text-sm text-slate-400">
+            à vista ou em até 12x no cartão
+          </p>
+
+          <a
+            id="pay3"
+            href="#"
+            data-checkout
+            class="cta-pulse mt-7 block w-full rounded-xl bg-amber-500 px-6 py-5 text-center text-base font-extrabold uppercase tracking-wide text-slate-950 transition hover:bg-amber-400 sm:text-lg"
+          >
+            Quero garantir minha vaga
+          </a>
+
+          <p class="mt-4 text-xs text-slate-400">
+            🔒 Pagamento seguro • Acesso enviado por e-mail após a confirmação
+          </p>
+
+          <div
+            class="mt-6 rounded-xl border border-emerald-500/30 bg-emerald-500/10 p-4 text-left"
+          >
+            <p class="text-sm font-bold text-emerald-300">
+              Garantia de 7 dias
+            </p>
+            <p class="mt-1 text-xs leading-relaxed text-emerald-100/80">
+              Entre, veja tudo por dentro e comece. Se sentir que não é para
+              você, é só pedir o reembolso em até 7 dias e receber seu dinheiro
+              de volta. O risco é nosso.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <h3
+          class="fade-in-element mt-12 text-center text-xl font-black sm:text-2xl"
+        >
+          Perguntas que todo mundo faz
+        </h3>
+        <div class="mt-6 space-y-3">
+          <details
+            class="fade-in-element rounded-xl border border-slate-800 bg-slate-900/60 p-5"
+          >
+            <summary
+              class="flex items-center justify-between gap-4 text-sm font-bold text-slate-100"
+            >
+              Isso é tratamento médico?
+              <span
+                class="faq-icon shrink-0 text-xl leading-none text-amber-400 transition-transform"
+                >+</span
+              >
+            </summary>
+            <p class="mt-3 text-sm leading-relaxed text-slate-400">
+              Não. É um programa de apoio, com orientação prática dia a dia. Ele
+              não substitui médico, psicólogo, CAPS, internação ou qualquer
+              tratamento de saúde — e pode ser feito junto com eles.
+            </p>
+          </details>
+
+          <details
+            class="fade-in-element rounded-xl border border-slate-800 bg-slate-900/60 p-5"
+          >
+            <summary
+              class="flex items-center justify-between gap-4 text-sm font-bold text-slate-100"
+            >
+              É para quem usa ou para a família?
+              <span
+                class="faq-icon shrink-0 text-xl leading-none text-amber-400 transition-transform"
+                >+</span
+              >
+            </summary>
+            <p class="mt-3 text-sm leading-relaxed text-slate-400">
+              Para os dois. Tem uma parte para quem quer parar e outra para quem
+              convive e não sabe mais o que fazer. Dá para fazer junto ou cada
+              um no seu tempo.
+            </p>
+          </details>
+
+          <details
+            class="fade-in-element rounded-xl border border-slate-800 bg-slate-900/60 p-5"
+          >
+            <summary
+              class="flex items-center justify-between gap-4 text-sm font-bold text-slate-100"
+            >
+              Preciso de computador ou internet boa?
+              <span
+                class="faq-icon shrink-0 text-xl leading-none text-amber-400 transition-transform"
+                >+</span
+              >
+            </summary>
+            <p class="mt-3 text-sm leading-relaxed text-slate-400">
+              Não. Funciona no celular, com internet simples. Você entra, lê o
+              passo do dia e faz.
+            </p>
+          </details>
+
+          <details
+            class="fade-in-element rounded-xl border border-slate-800 bg-slate-900/60 p-5"
+          >
+            <summary
+              class="flex items-center justify-between gap-4 text-sm font-bold text-slate-100"
+            >
+              Já tentei parar várias vezes e não consegui. Vale a pena?
+              <span
+                class="faq-icon shrink-0 text-xl leading-none text-amber-400 transition-transform"
+                >+</span
+              >
+            </summary>
+            <p class="mt-3 text-sm leading-relaxed text-slate-400">
+              É justamente para isso. Aqui não tem promessa grande de uma vez
+              só: tem um passo pequeno por dia, do jeito que dá para cumprir
+              mesmo num dia ruim.
+            </p>
+          </details>
+
+          <details
+            class="fade-in-element rounded-xl border border-slate-800 bg-slate-900/60 p-5"
+          >
+            <summary
+              class="flex items-center justify-between gap-4 text-sm font-bold text-slate-100"
+            >
+              Quando recebo o acesso?
+              <span
+                class="faq-icon shrink-0 text-xl leading-none text-amber-400 transition-transform"
+                >+</span
+              >
+            </summary>
+            <p class="mt-3 text-sm leading-relaxed text-slate-400">
+              Assim que o pagamento for confirmado, o acesso chega no seu
+              e-mail. Aí é só começar o Dia 1.
+            </p>
+          </details>
+        </div>
+
+        <!-- Última chamada -->
+        <div class="fade-in-element mt-12 text-center">
+          <p class="text-lg font-extrabold leading-snug sm:text-xl">
+            Mais um mês igual aos últimos<br />
+            ou 30 dias para começar a sair disso?
+          </p>
+          <a
+            id="pay4"
+            href="#"
+            data-checkout
+            class="mt-6 inline-block w-full rounded-xl bg-amber-500 px-6 py-4 text-base font-extrabold uppercase tracking-wide text-slate-950 transition hover:bg-amber-400 sm:w-auto sm:px-12"
+          >
+            Quero começar agora
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         RODAPÉ
+    ============================================================ -->
+    <footer class="border-t border-slate-800 bg-slate-950 px-5 py-10">
+      <div class="mx-auto max-w-3xl text-center">
+
+        <p class="mt-6 text-xs text-slate-500">
+          © <span id="ano"></span> 30 Dias Para Sair do Fundo do Poço. Todos os
+          direitos reservados.
+        </p>
+        <p class="mt-2 text-xs text-slate-600">
+          <a href="./politica-de-privacidade.html" class="hover:text-slate-400"
+            >Política de Privacidade</a
+          >
+          ·
+          <a href="./termos-de-uso.html" class="hover:text-slate-400"
+            >Termos de Uso</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <!-- ============================================================
+         CONFIGURAÇÃO — mexa só aqui
+    ============================================================ -->
+    <script>
+      window.LP_CONFIG = {
+        // 1) Link do checkout (Hotmart, Kiwify, Eduzz, Monetizze...)
+        CHECKOUT_URL: "https://pay.hotmart.com/SEU-CODIGO-AQUI",
+
+        // 2) ID do vídeo do YouTube (só o código depois de "v=")
+        //    Ex.: https://www.youtube.com/watch?v=dQw4w9WgXcQ  ->  "dQw4w9WgXcQ"
+        YOUTUBE_ID: "",
+
+        // 3) Meta Pixel — deixe "" para desativar
+        FB_PIXEL_ID: "",
+
+        // 4) Google Analytics 4 — deixe "" para desativar
+        GA4_ID: "",
+
+        // 5) Google Ads (opcional) — ex.: "AW-123456789"
+        GOOGLE_ADS_ID: "",
+
+        // 6) Google Tag Manager (opcional) — ex.: "GTM-XXXXXXX"
+        GTM_ID: "",
+      };
+    </script>
+
+    <!-- ============================================================
+         SCRIPTS DA PÁGINA
+    ============================================================ -->
+    <script>
+      (function () {
+        var cfg = window.LP_CONFIG || {};
+
+        // --- Ano do rodapé ---
+        document.getElementById("ano").textContent = new Date().getFullYear();
+
+        // --- Aplica o link de checkout em todos os CTAs ---
+        var ctas = document.querySelectorAll("[data-checkout]");
+        if (cfg.CHECKOUT_URL) {
+          ctas.forEach(function (a) {
+            a.setAttribute("href", cfg.CHECKOUT_URL);
+            a.setAttribute("rel", "noopener");
+          });
+        }
+
+        // --- Vídeo: carrega o player do YouTube só no clique ---
+        var thumb = document.getElementById("video-thumb");
+        var playBtn = document.getElementById("video-play");
+        var facade = document.getElementById("video-facade");
+
+        if (cfg.YOUTUBE_ID) {
+          thumb.src =
+            "https://i.ytimg.com/vi/" + cfg.YOUTUBE_ID + "/maxresdefault.jpg";
+          thumb.onerror = function () {
+            thumb.src =
+              "https://i.ytimg.com/vi/" + cfg.YOUTUBE_ID + "/hqdefault.jpg";
+            thumb.onerror = null;
+          };
+        } else {
+          thumb.style.display = "none";
+        }
+
+        playBtn.addEventListener("click", function () {
+          if (!cfg.YOUTUBE_ID) return;
+          var iframe = document.createElement("iframe");
+          iframe.src =
+            "https://www.youtube-nocookie.com/embed/" +
+            cfg.YOUTUBE_ID +
+            "?autoplay=1&rel=0&modestbranding=1&playsinline=1";
+          iframe.title = "Vídeo de apresentação do programa";
+          iframe.allow =
+            "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+          iframe.allowFullscreen = true;
+          facade.innerHTML = "";
+          facade.appendChild(iframe);
+          track("ViewContent", { content_name: "video_vsl" });
+        });
+
+        // --- Animação de entrada ---
+        var els = document.querySelectorAll(".fade-in-element");
+        if ("IntersectionObserver" in window) {
+          var obs = new IntersectionObserver(
+            function (entries, o) {
+              entries.forEach(function (e) {
+                if (e.isIntersecting) {
+                  e.target.classList.add("is-visible");
+                  o.unobserve(e.target);
+                }
+              });
+            },
+            { threshold: 0.1 }
+          );
+          els.forEach(function (el) {
+            obs.observe(el);
+          });
+        } else {
+          els.forEach(function (el) {
+            el.classList.add("is-visible");
+          });
+        }
+
+        // --- Disparo unificado de eventos (Pixel + GA4) ---
+        window.track = function (eventName, params) {
+          params = params || {};
+          if (typeof fbq === "function") fbq("track", eventName, params);
+          if (typeof gtag === "function") gtag("event", eventName, params);
+        };
+
+        // --- InitiateCheckout ao clicar em qualquer CTA ---
+        document.addEventListener("click", function (e) {
+          var a = e.target.closest("a[data-checkout]");
+          if (!a) return;
+          track("InitiateCheckout", {
+            content_name: "30 dias para sair do fundo do poco",
+            value: 97.0,
+            currency: "BRL",
+            cta_id: a.id || "sem-id",
+          });
+          // não bloqueia a navegação
+        });
+      })();
+    </script>
+
+    <!-- ============================================================
+         META PIXEL (Facebook / Instagram)
+         Preencha FB_PIXEL_ID em LP_CONFIG para ativar.
+    ============================================================ -->
+    <script>
+      (function () {
+        var id = (window.LP_CONFIG || {}).FB_PIXEL_ID;
+        if (!id) return;
+
+        !(function (f, b, e, v, n, t, s) {
+          if (f.fbq) return;
+          n = f.fbq = function () {
+            n.callMethod
+              ? n.callMethod.apply(n, arguments)
+              : n.queue.push(arguments);
+          };
+          if (!f._fbq) f._fbq = n;
+          n.push = n;
+          n.loaded = !0;
+          n.version = "2.0";
+          n.queue = [];
+          t = b.createElement(e);
+          t.async = !0;
+          t.src = v;
+          s = b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t, s);
+        })(
+          window,
+          document,
+          "script",
+          "https://connect.facebook.net/pt_BR/fbevents.js"
+        );
+
+        fbq("init", id);
+        fbq("track", "PageView");
+
+        var ns = document.createElement("noscript");
+        ns.innerHTML =
+          '<img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=' +
+          id +
+          '&ev=PageView&noscript=1" />';
+        document.body.appendChild(ns);
+      })();
+    </script>
+
+    <!-- ============================================================
+         GOOGLE ANALYTICS 4 / GOOGLE ADS (gtag.js)
+         Preencha GA4_ID e/ou GOOGLE_ADS_ID em LP_CONFIG para ativar.
+    ============================================================ -->
+    <script>
+      (function () {
+        var cfg = window.LP_CONFIG || {};
+        var ids = [cfg.GA4_ID, cfg.GOOGLE_ADS_ID].filter(Boolean);
+        if (!ids.length) return;
+
+        var s = document.createElement("script");
+        s.async = true;
+        s.src = "https://www.googletagmanager.com/gtag/js?id=" + ids[0];
+        document.head.appendChild(s);
+
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function () {
+          dataLayer.push(arguments);
+        };
+        gtag("js", new Date());
+        ids.forEach(function (id) {
+          gtag("config", id);
+        });
+      })();
+    </script>
+
+    <!-- ============================================================
+         GOOGLE TAG MANAGER (opcional)
+         Preencha GTM_ID em LP_CONFIG para ativar.
+    ============================================================ -->
+    <script>
+      (function () {
+        var id = (window.LP_CONFIG || {}).GTM_ID;
+        if (!id) return;
+        (function (w, d, s, l, i) {
+          w[l] = w[l] || [];
+          w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+          var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != "dataLayer" ? "&l=" + l : "";
+          j.async = true;
+          j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+          f.parentNode.insertBefore(j, f);
+        })(window, document, "script", "dataLayer", id);
+
+        var ns = document.createElement("noscript");
+        ns.innerHTML =
+          '<iframe src="https://www.googletagmanager.com/ns.html?id=' +
+          id +
+          '" height="0" width="0" style="display:none;visibility:hidden"></iframe>';
+        document.body.insertBefore(ns, document.body.firstChild);
+      })();
+    </script>
+  </body>
+</html>
