@@ -1,0 +1,5 @@
+Coloque aqui:
+- apresentacao.mp4 = o vídeo de apresentação (formato MP4, codec H.264)
+
+Dica: comprima o vídeo antes de subir (ex.: HandBrake) para carregar rápido no celular.
+Um vídeo de alguns minutos em boa qualidade normalmente fica entre 15-40 MB.
