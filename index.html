@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
@@ -14,24 +14,24 @@
     />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="author" content="30 Dias Para Sair do Fundo do Poço" />
-    <link rel="canonical" href="https://SEUDOMINIO.com.br/trintadias/" />
+    <link rel="canonical" href="https://30dias-para-sair-do-fundo-do-poco.com/" />
 
     <!-- Open Graph (WhatsApp / Facebook / Instagram) -->
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="pt_BR" />
-    <meta property="og:site_name" content="30 Dias Para Sair do Fundo do Poço" />
     <meta
-      property="og:title"
+      property="og:site_name"
       content="30 Dias Para Sair do Fundo do Poço"
     />
+    <meta property="og:title" content="30 Dias Para Sair do Fundo do Poço" />
     <meta
       property="og:description"
       content="Um caminho simples, dia após dia, para quem quer parar — e para a família que já não sabe o que fazer."
     />
-    <meta property="og:url" content="https://SEUDOMINIO.com.br/trintadias/" />
+    <meta property="og:url" content="https://30dias-para-sair-do-fundo-do-poco.com/" />
     <meta
       property="og:image"
-      content="https://SEUDOMINIO.com.br/trintadias/img/og-cover.jpg"
+      content="https://30dias-para-sair-do-fundo-do-poco.com/img/og-cover.jpeg"
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -49,7 +49,7 @@
     />
     <meta
       name="twitter:image"
-      content="https://SEUDOMINIO.com.br/trintadias/img/og-cover.jpg"
+      content="https://30dias-para-sair-do-fundo-do-poco.com/img/og-cover.jpeg"
     />
 
     <!-- Favicon inline (troque por /img/favicon.ico quando tiver a arte) -->
@@ -74,7 +74,11 @@
         color-scheme: dark;
       }
       body {
-        font-family: "Montserrat", system-ui, -apple-system, sans-serif;
+        font-family:
+          "Montserrat",
+          system-ui,
+          -apple-system,
+          sans-serif;
         -webkit-font-smoothing: antialiased;
       }
       html {
@@ -100,7 +104,9 @@
       .fade-in-element {
         opacity: 0;
         transform: translateY(18px);
-        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        transition:
+          opacity 0.6s ease-out,
+          transform 0.6s ease-out;
       }
       .fade-in-element.is-visible {
         opacity: 1;
@@ -194,6 +200,42 @@
           animation: none;
         }
       }
+      /* Carrossel do criador */
+      .carousel-slide {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+        opacity: 0;
+        transition: opacity 0.6s ease;
+      }
+      .carousel-slide.is-active {
+        opacity: 1;
+      }
+      .carousel-dot {
+        height: 8px;
+        width: 8px;
+        border-radius: 9999px;
+        background-color: rgba(148, 163, 184, 0.35);
+        transition:
+          width 0.3s ease,
+          background-color 0.3s ease;
+      }
+      .carousel-dot:hover {
+        background-color: rgba(148, 163, 184, 0.6);
+      }
+      .carousel-dot.is-active {
+        width: 24px;
+        background-color: #fbbf24;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .carousel-slide,
+        .carousel-dot {
+          transition: none;
+        }
+      }
       details > summary {
         list-style: none;
         cursor: pointer;
@@ -217,14 +259,14 @@
           "@type": "Brand",
           "name": "30 Dias Para Sair do Fundo do Poço"
         },
-        "url": "https://SEUDOMINIO.com.br/trintadias/",
-        "image": "https://SEUDOMINIO.com.br/trintadias/img/og-cover.jpg",
+        "url": "https://30dias-para-sair-do-fundo-do-poco.com/",
+        "image": "https://30dias-para-sair-do-fundo-do-poco.com/img/og-cover.jpeg",
         "offers": {
           "@type": "Offer",
-          "price": "97.00",
+          "price": "449.00",
           "priceCurrency": "BRL",
           "availability": "https://schema.org/InStock",
-          "url": "https://SEUDOMINIO.com.br/trintadias/"
+          "url": "https://30dias-para-sair-do-fundo-do-poco.com/"
         }
       }
     </script>
@@ -277,7 +319,10 @@
     <header
       class="relative overflow-hidden bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950"
     >
-      <div class="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
+      <div
+        class="pointer-events-none absolute inset-0 overflow-hidden"
+        aria-hidden="true"
+      >
         <div
           class="hero-glow hero-glow-1 -top-32 left-1/2 h-72 w-72 bg-amber-500/30"
         ></div>
@@ -290,18 +335,23 @@
       </div>
 
       <div class="relative mx-auto max-w-3xl px-5 pb-14 pt-10 sm:pt-14">
-
         <h1
-          class="text-center text-3xl font-black leading-tight sm:text-4xl md:text-5xl"
+          class="text-center font-black uppercase leading-[0.95] tracking-tight"
         >
-          30 dias para sair do
-          <span class="text-amber-400">fundo do poço</span>
+          <span class="block text-6xl text-amber-400 sm:text-7xl md:text-8xl"
+            >30 dias</span
+          >
+          <span class="mt-2 block text-2xl text-white sm:text-3xl md:text-4xl"
+            >para sair do fundo do poço</span
+          >
         </h1>
 
         <p
           class="mx-auto mt-5 max-w-xl text-center text-base leading-relaxed text-slate-300 sm:text-lg"
         >
-          Um passo por dia, para quem quer se libertar das dores e das perdas causadas pela dependência química — e para a família que já não sabe mais o que fazer com a pessoa que ama.
+          Um passo por dia, para quem quer se libertar das dores e das perdas
+          causadas pela dependência química — e para a família que já não sabe
+          mais o que fazer com a pessoa que ama.
         </p>
 
         <!-- VÍDEO -->
@@ -374,10 +424,17 @@
     </header>
 
     <!-- Divisória entre a hero e a seção seguinte -->
-    <div class="mx-auto flex max-w-3xl items-center gap-4 px-5" aria-hidden="true">
-      <span class="h-px flex-1 bg-gradient-to-r from-transparent to-slate-700"></span>
+    <div
+      class="mx-auto flex max-w-3xl items-center gap-4 px-5"
+      aria-hidden="true"
+    >
+      <span
+        class="h-px flex-1 bg-gradient-to-r from-transparent to-slate-700"
+      ></span>
       <span class="h-1.5 w-1.5 rounded-full bg-amber-500"></span>
-      <span class="h-px flex-1 bg-gradient-to-l from-transparent to-slate-700"></span>
+      <span
+        class="h-px flex-1 bg-gradient-to-l from-transparent to-slate-700"
+      ></span>
     </div>
 
     <!-- ============================================================
@@ -444,7 +501,9 @@
                   stroke-linejoin="round"
                   aria-hidden="true"
                 >
-                  <path d="M2.25 18 9 11.25l4.31 4.31a11.95 11.95 0 0 1 5.81-5.52l2.13-.95" />
+                  <path
+                    d="M2.25 18 9 11.25l4.31 4.31a11.95 11.95 0 0 1 5.81-5.52l2.13-.95"
+                  />
                   <path d="m15.6 8 5.65-.9-.9 5.65" />
                 </svg>
               </span>
@@ -461,28 +520,38 @@
                   class="mt-[9px] h-1.5 w-1.5 shrink-0 rotate-45 bg-amber-500/80"
                   aria-hidden="true"
                 ></span>
-                <span>Você já prometeu parar. Prometeu de novo. E de novo.</span>
+                <span
+                  >Você já prometeu parar. Prometeu de novo. E de novo.</span
+                >
               </li>
               <li class="flex gap-3 py-3.5 first:pt-0 last:pb-0">
                 <span
                   class="mt-[9px] h-1.5 w-1.5 shrink-0 rotate-45 bg-amber-500/80"
                   aria-hidden="true"
                 ></span>
-                <span>Acorda arrependido, e à noite está tudo igual outra vez.</span>
+                <span
+                  >Acorda arrependido, e à noite está tudo igual outra
+                  vez.</span
+                >
               </li>
               <li class="flex gap-3 py-3.5 first:pt-0 last:pb-0">
                 <span
                   class="mt-[9px] h-1.5 w-1.5 shrink-0 rotate-45 bg-amber-500/80"
                   aria-hidden="true"
                 ></span>
-                <span>Perdeu emprego, dinheiro, respeito, gente que te amava.</span>
+                <span
+                  >Perdeu emprego, dinheiro, respeito, gente que te amava.</span
+                >
               </li>
               <li class="flex gap-3 py-3.5 first:pt-0 last:pb-0">
                 <span
                   class="mt-[9px] h-1.5 w-1.5 shrink-0 rotate-45 bg-amber-500/80"
                   aria-hidden="true"
                 ></span>
-                <span>Tem vergonha de pedir ajuda e medo de tentar e falhar de novo.</span>
+                <span
+                  >Tem vergonha de pedir ajuda e medo de tentar e falhar de
+                  novo.</span
+                >
               </li>
             </ul>
           </article>
@@ -533,21 +602,30 @@
                   class="mt-[9px] h-1.5 w-1.5 shrink-0 rotate-45 bg-amber-500/80"
                   aria-hidden="true"
                 ></span>
-                <span>Já tentou conversar, brigar, chorar, ameaçar. Nada mudou.</span>
+                <span
+                  >Já tentou conversar, brigar, chorar, ameaçar. Nada
+                  mudou.</span
+                >
               </li>
               <li class="flex gap-3 py-3.5 first:pt-0 last:pb-0">
                 <span
                   class="mt-[9px] h-1.5 w-1.5 shrink-0 rotate-45 bg-amber-500/80"
                   aria-hidden="true"
                 ></span>
-                <span>Some dinheiro, some coisa dentro de casa, e você finge que não vê.</span>
+                <span
+                  >Some dinheiro, some coisa dentro de casa, e você finge que
+                  não vê.</span
+                >
               </li>
               <li class="flex gap-3 py-3.5 first:pt-0 last:pb-0">
                 <span
                   class="mt-[9px] h-1.5 w-1.5 shrink-0 rotate-45 bg-amber-500/80"
                   aria-hidden="true"
                 ></span>
-                <span>Não sabe se ajuda ou se afasta — e se sente culpada dos dois jeitos.</span>
+                <span
+                  >Não sabe se ajuda ou se afasta — e se sente culpada dos dois
+                  jeitos.</span
+                >
               </li>
               <li class="flex gap-3 py-3.5 first:pt-0 last:pb-0">
                 <span
@@ -561,6 +639,7 @@
         </div>
 
         <!-- Callout -->
+        <!--
         <div
           class="fade-in-element relative mx-auto mt-8 max-w-2xl overflow-hidden rounded-2xl border border-amber-500/25 bg-gradient-to-br from-amber-500/[0.12] via-amber-500/[0.06] to-transparent p-6 sm:p-7"
           style="transition-delay: 150ms"
@@ -583,9 +662,13 @@
             </p>
           </div>
         </div>
+        -->
 
         <!-- CTA da seção -->
-        <div class="fade-in-element mx-auto mt-10 max-w-2xl" style="transition-delay: 200ms">
+        <div
+          class="fade-in-element mx-auto mt-10 max-w-2xl"
+          style="transition-delay: 200ms"
+        >
           <a
             id="pay1b"
             href="#oferta"
@@ -607,7 +690,7 @@
             </svg>
           </a>
           <p class="mt-3 text-center text-xs text-slate-500 sm:text-sm">
-            Comece hoje mesmo pelo celular — o Dia 1 já está te esperando.
+            🙏 Não é falta de vergonha na cara, mas de um caminho claro.
           </p>
         </div>
       </div>
@@ -630,8 +713,8 @@
         <p
           class="fade-in-element mx-auto mt-4 max-w-xl text-center text-slate-300"
         >
-          São 30 aulas em vídeo, uma por dia. Curtas e diretas — pra caber
-          mesmo num dia difícil.
+          São 30 vídeos-guia, um por dia. Curtos e diretos — pra caber mesmo num
+          dia difícil.
         </p>
 
         <ul
@@ -666,88 +749,166 @@
           </li>
         </ul>
 
-        <div class="mt-10 space-y-4">
-          <!-- Semana 1 -->
-          <div
-            class="fade-in-element flex gap-4 rounded-2xl border border-slate-800 bg-slate-900/60 p-5"
-          >
-            <div
-              class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-amber-500 text-sm font-black text-slate-950"
-            >
-              1-7
-            </div>
-            <div>
-              <h3 class="font-extrabold text-slate-100">
-                A verdade vem à tona — dos dois lados
-              </h3>
-              <p class="mt-1 text-sm leading-relaxed text-slate-400">
-                Enquanto um jura que "amanhã eu paro" e o outro repete que "não é
-                tão grave", nada muda. A primeira semana derruba as duas
-                mentiras. É desconfortável — e é por isso que funciona.
-              </p>
-            </div>
-          </div>
+        <div
+          class="fade-in-element mt-10 rounded-2xl border border-slate-800 bg-slate-900/60 p-5 sm:p-8"
+        >
+          <div class="relative pl-14 sm:pl-20">
+            <!-- linha do tempo -->
+            <span
+              class="pointer-events-none absolute left-5 top-5 bottom-0 w-px bg-gradient-to-b from-amber-500/50 via-amber-500/25 to-transparent sm:left-7 sm:top-7"
+              aria-hidden="true"
+            ></span>
 
-          <!-- Semana 2 -->
-          <div
-            class="fade-in-element flex gap-4 rounded-2xl border border-slate-800 bg-slate-900/60 p-5"
-          >
-            <div
-              class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-amber-500 text-sm font-black text-slate-950"
-            >
-              8-14
-            </div>
-            <div>
-              <h3 class="font-extrabold text-slate-100">
-                O ciclo que sempre traz de volta se quebra
-              </h3>
-              <p class="mt-1 text-sm leading-relaxed text-slate-400">
-                Não é falta de amor nem de força de vontade: é um padrão que se
-                repete há anos, sempre na mesma discussão e sempre na mesma
-                recaída. Aqui vocês enxergam esse padrão — e param de alimentá-lo.
-              </p>
-            </div>
-          </div>
+            <div class="space-y-10">
+              <!-- Dias 1 a 7 -->
+              <div class="fade-in-element relative">
+                <span
+                  class="absolute -left-14 top-0 flex h-10 w-10 items-center justify-center rounded-full border border-amber-500/30 bg-slate-950 text-amber-400 shadow-lg shadow-amber-950/50 sm:-left-20 sm:h-14 sm:w-14"
+                  aria-hidden="true"
+                >
+                  <svg
+                    class="h-5 w-5 sm:h-6 sm:w-6"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M2.04 12.32a1 1 0 0 1 0-.64C3.42 7.51 7.36 4.5 12 4.5s8.57 3.01 9.96 7.18a1 1 0 0 1 0 .64C20.58 16.49 16.64 19.5 12 19.5s-8.57-3.01-9.96-7.18Z"
+                    />
+                    <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                  </svg>
+                </span>
+                <p
+                  class="text-[11px] font-black uppercase tracking-[0.16em] text-amber-400"
+                >
+                  Dias 1 a 7
+                </p>
+                <h3
+                  class="mt-1 text-lg font-extrabold leading-snug text-slate-100 sm:text-xl"
+                >
+                  A verdade vem à tona — dos dois lados
+                </h3>
+                <p class="mt-2 max-w-xl text-sm leading-relaxed text-slate-400">
+                  Enquanto um jura que "amanhã eu paro" e o outro repete que
+                  "não é tão grave", nada muda. A primeira semana derruba as
+                  duas mentiras.
+                </p>
+              </div>
 
-          <!-- Semana 3 -->
-          <div
-            class="fade-in-element flex gap-4 rounded-2xl border border-slate-800 bg-slate-900/60 p-5"
-          >
-            <div
-              class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-amber-500 text-sm font-black text-slate-950"
-            >
-              15-22
-            </div>
-            <div>
-              <h3 class="font-extrabold text-slate-100">
-                A casa volta a ter chão
-              </h3>
-              <p class="mt-1 text-sm leading-relaxed text-slate-400">
-                Dinheiro, rotina, limite e respeito não voltam por emoção nem por
-                promessa. Voltam por estrutura. É a semana em que a casa deixa de
-                viver em crise e volta a ser um lugar previsível.
-              </p>
-            </div>
-          </div>
+              <!-- Dias 8 a 14 -->
+              <div class="fade-in-element relative">
+                <span
+                  class="absolute -left-14 top-0 flex h-10 w-10 items-center justify-center rounded-full border border-amber-500/30 bg-slate-950 text-amber-400 shadow-lg shadow-amber-950/50 sm:-left-20 sm:h-14 sm:w-14"
+                  aria-hidden="true"
+                >
+                  <svg
+                    class="h-5 w-5 sm:h-6 sm:w-6"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M19.5 9.5A7.5 7.5 0 0 0 6.2 6.7" />
+                    <path d="M19.5 4.5V9.5H14.5" />
+                    <path d="M4.5 14.5a7.5 7.5 0 0 0 13.3 2.8" />
+                    <path d="M4.5 19.5V14.5H9.5" />
+                  </svg>
+                </span>
+                <p
+                  class="text-[11px] font-black uppercase tracking-[0.16em] text-amber-400"
+                >
+                  Dias 8 a 14
+                </p>
+                <h3
+                  class="mt-1 text-lg font-extrabold leading-snug text-slate-100 sm:text-xl"
+                >
+                  O ciclo que sempre traz de volta se quebra
+                </h3>
+                <p class="mt-2 max-w-xl text-sm leading-relaxed text-slate-400">
+                  Não é falta de amor nem de força de vontade: é um padrão que
+                  se repete há anos. Aqui vocês enxergam esse padrão — e param
+                  de alimentá-lo.
+                </p>
+              </div>
 
-          <!-- Semana 4 -->
-          <div
-            class="fade-in-element flex gap-4 rounded-2xl border border-slate-800 bg-slate-900/60 p-5"
-          >
-            <div
-              class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-amber-500 text-sm font-black text-slate-950"
-            >
-              23-30
-            </div>
-            <div>
-              <h3 class="font-extrabold text-slate-100">
-                Segurar o que foi reconstruído
-              </h3>
-              <p class="mt-1 text-sm leading-relaxed text-slate-400">
-                Todo mundo aguenta uns dias bons. O difícil é o dia em que a
-                motivação acaba e vem o tropeço. A última semana prepara vocês
-                para esse dia — para que ele não jogue tudo fora de novo.
-              </p>
+              <!-- Dias 15 a 22 -->
+              <div class="fade-in-element relative">
+                <span
+                  class="absolute -left-14 top-0 flex h-10 w-10 items-center justify-center rounded-full border border-amber-500/30 bg-slate-950 text-amber-400 shadow-lg shadow-amber-950/50 sm:-left-20 sm:h-14 sm:w-14"
+                  aria-hidden="true"
+                >
+                  <svg
+                    class="h-5 w-5 sm:h-6 sm:w-6"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="m3 11 9-8 9 8" />
+                    <path d="M5.5 9.8V20h13V9.8" />
+                    <path d="M10 20v-5.5h4V20" />
+                  </svg>
+                </span>
+                <p
+                  class="text-[11px] font-black uppercase tracking-[0.16em] text-amber-400"
+                >
+                  Dias 15 a 22
+                </p>
+                <h3
+                  class="mt-1 text-lg font-extrabold leading-snug text-slate-100 sm:text-xl"
+                >
+                  A casa volta a ter chão
+                </h3>
+                <p class="mt-2 max-w-xl text-sm leading-relaxed text-slate-400">
+                  Dinheiro, rotina, limite e respeito não voltam por promessa.
+                  Voltam por estrutura — e a casa deixa de viver em crise.
+                </p>
+              </div>
+
+              <!-- Dias 23 a 30 -->
+              <div class="fade-in-element relative">
+                <span
+                  class="absolute -left-14 top-0 flex h-10 w-10 items-center justify-center rounded-full border-2 border-amber-500 bg-amber-500 text-slate-950 shadow-lg shadow-amber-900/40 sm:-left-20 sm:h-14 sm:w-14"
+                  aria-hidden="true"
+                >
+                  <svg
+                    class="h-5 w-5 sm:h-6 sm:w-6"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.9"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M12 3 4.5 6v6c0 4.2 3.2 7.9 7.5 9 4.3-1.1 7.5-4.8 7.5-9V6L12 3Z"
+                    />
+                    <path d="m9 12 2 2 4-4" />
+                  </svg>
+                </span>
+                <p
+                  class="text-[11px] font-black uppercase tracking-[0.16em] text-amber-400"
+                >
+                  Dias 23 a 30
+                </p>
+                <h3
+                  class="mt-1 text-lg font-extrabold leading-snug text-slate-100 sm:text-xl"
+                >
+                  Segurar o que foi reconstruído
+                </h3>
+                <p class="mt-2 max-w-xl text-sm leading-relaxed text-slate-400">
+                  Todo mundo aguenta uns dias bons. A última semana prepara
+                  vocês para o dia em que a motivação acaba — para que ele não
+                  jogue tudo fora.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -756,7 +917,7 @@
           id="pay2"
           href="#oferta"
           data-scroll-cta
-          class="fade-in-element group flex w-full items-center justify-center gap-2.5 rounded-xl bg-amber-500 px-6 py-4 text-center text-base font-extrabold uppercase tracking-wide text-slate-950 transition hover:bg-amber-400"
+          class="fade-in-element group mt-10 flex w-full items-center justify-center gap-2.5 rounded-xl bg-amber-500 px-6 py-4 text-center text-base font-extrabold uppercase tracking-wide text-slate-950 transition hover:bg-amber-400"
         >
           Começar o dia 1 hoje
           <svg
@@ -780,27 +941,127 @@
     ============================================================ -->
     <section class="bg-slate-950 px-5 py-14 sm:py-20" id="quem-conduz">
       <div class="mx-auto max-w-3xl">
-        <!-- ==========================================================
-             ATENÇÃO: troque a foto e o texto abaixo pelo conteúdo real
-             do criador (nome, trajetória, credencial) assim que
-             receber o material.
-        ========================================================== -->
         <div
           class="fade-in-element grid overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/60 sm:grid-cols-2"
         >
-          <div class="relative min-h-[280px] bg-slate-800 sm:min-h-full">
-            <img
-              id="criador-foto"
-              src="img/criador.jpg"
-              alt="[Nome do criador], criador do método 30 Dias"
-              class="absolute inset-0 h-full w-full object-cover object-top"
-              loading="lazy"
-              onerror="this.style.display='none'"
-            />
+          <div class="flex flex-col bg-slate-900">
             <div
-              class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent sm:bg-gradient-to-r sm:from-slate-950/40"
-              aria-hidden="true"
-            ></div>
+              id="criador-carousel"
+              class="relative min-h-[340px] flex-1 overflow-hidden bg-slate-800 sm:min-h-[420px]"
+              aria-roledescription="carrossel"
+              aria-label="Fotos de Jefferson Santos e da sua família"
+            >
+              <img
+                src="img/jefferson.webp"
+                alt="Jefferson Santos (Bença), criador do método 30 Dias"
+                class="carousel-slide is-active"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                src="img/familia1.webp"
+                alt="Jefferson Santos com a esposa e os filhos"
+                class="carousel-slide"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                src="img/familia2.webp"
+                alt="Jefferson Santos com a família"
+                class="carousel-slide"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                src="img/familia3.webp"
+                alt="Jefferson Santos com a família"
+                class="carousel-slide"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                src="img/familia4.webp"
+                alt="Jefferson Santos com a família"
+                class="carousel-slide"
+                loading="lazy"
+                decoding="async"
+              />
+
+              <div
+                class="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent sm:bg-gradient-to-r sm:from-slate-950/40"
+                aria-hidden="true"
+              ></div>
+
+              <button
+                type="button"
+                data-carousel-prev
+                class="absolute left-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-slate-950/50 text-white backdrop-blur transition hover:border-amber-500/50 hover:bg-slate-950/80 hover:text-amber-400"
+                aria-label="Foto anterior"
+              >
+                <svg
+                  class="h-5 w-5"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="m15 18-6-6 6-6" />
+                </svg>
+              </button>
+              <button
+                type="button"
+                data-carousel-next
+                class="absolute right-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-slate-950/50 text-white backdrop-blur transition hover:border-amber-500/50 hover:bg-slate-950/80 hover:text-amber-400"
+                aria-label="Próxima foto"
+              >
+                <svg
+                  class="h-5 w-5"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="m9 18 6-6-6-6" />
+                </svg>
+              </button>
+            </div>
+
+            <div
+              id="criador-dots"
+              class="flex items-center justify-center gap-2 py-4"
+            >
+              <button
+                type="button"
+                class="carousel-dot is-active"
+                aria-label="Ir para a foto 1"
+              ></button>
+              <button
+                type="button"
+                class="carousel-dot"
+                aria-label="Ir para a foto 2"
+              ></button>
+              <button
+                type="button"
+                class="carousel-dot"
+                aria-label="Ir para a foto 3"
+              ></button>
+              <button
+                type="button"
+                class="carousel-dot"
+                aria-label="Ir para a foto 4"
+              ></button>
+              <button
+                type="button"
+                class="carousel-dot"
+                aria-label="Ir para a foto 5"
+              ></button>
+            </div>
           </div>
           <div class="flex flex-col justify-center p-6 sm:p-8">
             <p
@@ -809,51 +1070,26 @@
               O criador do método
             </p>
             <h2 class="mt-2 text-2xl font-black leading-tight sm:text-3xl">
-              [Nome do criador]
+              Jefferson Santos
+              <span class="text-amber-400">"Bença"</span>
             </h2>
             <p class="mt-4 text-sm leading-relaxed text-slate-300 sm:text-base">
-              [Trajetória: o que ele viveu na pele e o que o qualifica a falar
-              sobre esse tema.]
+              Empresário, conselheiro e uma prova viva de que nenhuma história
+              está perdida.
             </p>
             <p class="mt-4 text-sm leading-relaxed text-slate-300 sm:text-base">
-              [Por que criou o método e por que ele funciona.]
+              Aos 18 anos, deu o primeiro gole. Em dois anos já era dependente
+              químico — e um ano e meio depois, morava na rua, no meio da
+              Cracolândia.
+            </p>
+            <p class="mt-4 text-sm leading-relaxed text-slate-300 sm:text-base">
+              Mas Deus mudou a sua vida e transformou seu caráter. Hoje,
+              Jefferson é empresário, casado, pai de família e conselheiro —
+              referência para quem também busca uma virada de vida. Acredita que
+              nenhuma dor precisa ser o fim, e ensina outras pessoas a
+              reconstruírem suas próprias trajetórias.
             </p>
           </div>
-        </div>
-
-        <!-- DEPOIMENTOS -->
-        <!-- ==========================================================
-             ATENÇÃO: substitua os textos abaixo por DEPOIMENTOS REAIS
-             (com autorização de quem falou). Se ainda não tiver,
-             apague este bloco inteiro em vez de publicar exemplos.
-        ========================================================== -->
-        <h3
-          class="fade-in-element mt-12 text-center text-xl font-black sm:text-2xl"
-        >
-          Quem já começou
-        </h3>
-        <div class="mt-6 grid gap-4 sm:grid-cols-2">
-          <figure
-            class="fade-in-element rounded-2xl border border-slate-800 bg-slate-900/60 p-5"
-          >
-            <blockquote class="text-sm leading-relaxed text-slate-300">
-              [DEPOIMENTO REAL 1 — cole aqui o texto exato que a pessoa
-              enviou.]
-            </blockquote>
-            <figcaption class="mt-3 text-xs font-semibold text-amber-400">
-              [Nome], [cidade/UF]
-            </figcaption>
-          </figure>
-          <figure
-            class="fade-in-element rounded-2xl border border-slate-800 bg-slate-900/60 p-5"
-          >
-            <blockquote class="text-sm leading-relaxed text-slate-300">
-              [DEPOIMENTO REAL 2 — de preferência de um familiar.]
-            </blockquote>
-            <figcaption class="mt-3 text-xs font-semibold text-amber-400">
-              [Nome], [cidade/UF]
-            </figcaption>
-          </figure>
         </div>
       </div>
     </section>
@@ -884,13 +1120,15 @@
             <p
               class="mx-auto mt-5 max-w-lg text-sm leading-relaxed text-slate-400"
             >
-              São 30 aulas e 60 tarefas guiadas para reconstruir, um dia de cada
-              vez, o que a dependência levou embora. Comece hoje,
-              mude em 30 dias.
+              São 30 vídeos-guia e 60 tarefas guiadas para reconstruir, um dia
+              de cada vez, o que a dependência levou embora. Comece hoje, mude
+              em 30 dias.
             </p>
 
             <div class="mt-7">
-              <p class="flex flex-wrap items-center justify-center gap-2 text-sm text-slate-400">
+              <p
+                class="flex flex-wrap items-center justify-center gap-2 text-sm text-slate-400"
+              >
                 <span class="line-through">De R$ 999</span>
                 <span
                   class="rounded-md bg-amber-500/15 px-2 py-0.5 text-xs font-bold text-amber-300"
@@ -901,7 +1139,9 @@
               <p
                 class="mt-1 flex items-start justify-center gap-1 text-5xl font-black leading-none tracking-tight text-amber-400 sm:text-6xl"
               >
-                <span class="mt-1 text-2xl font-extrabold sm:mt-1.5 sm:text-3xl">R$</span>
+                <span class="mt-1 text-2xl font-extrabold sm:mt-1.5 sm:text-3xl"
+                  >R$</span
+                >
                 449
               </p>
               <p class="mt-2 text-sm text-slate-400">
@@ -950,7 +1190,9 @@
                   stroke-linejoin="round"
                   aria-hidden="true"
                 >
-                  <path d="M12 3 4.5 6v6c0 4.2 3.2 7.9 7.5 9 4.3-1.1 7.5-4.8 7.5-9V6L12 3Z" />
+                  <path
+                    d="M12 3 4.5 6v6c0 4.2 3.2 7.9 7.5 9 4.3-1.1 7.5-4.8 7.5-9V6L12 3Z"
+                  />
                   <path d="m9 12 2 2 4-4" />
                 </svg>
               </span>
@@ -959,7 +1201,7 @@
                   Garantia de 7 dias
                 </p>
                 <p class="mt-1 text-xs leading-relaxed text-emerald-100/80">
-                  Entre, veja tudo por dentro e comece. Se sentir que não é para
+                  Entre e comece os primeiros dias. Se sentir que não é para
                   você, é só pedir o reembolso em até 7 dias e receber seu
                   dinheiro de volta. O risco é nosso.
                 </p>
@@ -1000,6 +1242,31 @@
             <summary
               class="flex items-center justify-between gap-4 text-sm font-bold text-slate-100"
             >
+              E se a pessoa que eu amo não aceitar ajuda?
+              <span
+                class="faq-icon shrink-0 text-xl leading-none text-amber-400 transition-transform"
+                >+</span
+              >
+            </summary>
+            <p class="mt-3 text-sm leading-relaxed text-slate-400">
+              Muitas vezes ele não reconheceu a doença, mas quando você
+              reconhece por ele e passa a ter atitudes e comportamentos que
+              edificam a relação — em vez de cobrar, ameaçar ou aturar em
+              silêncio — a casa já começa a mudar, mesmo sem ele abrir um vídeo.
+              O seu lado do programa foi feito pra isso: você segue os seus 30
+              dias sozinha, aprende a sair do ciclo que não funciona, e deixa a
+              Ponte do Dia pronta pra quando ele estiver pronto pra entrar.
+              Muita família começa sozinha — e é o próprio jeito diferente de
+              agir que abre a porta pro outro lado.
+            </p>
+          </details>
+
+          <details
+            class="fade-in-element rounded-xl border border-slate-800 bg-slate-900/60 p-5"
+          >
+            <summary
+              class="flex items-center justify-between gap-4 text-sm font-bold text-slate-100"
+            >
               Preciso de computador ou internet boa?
               <span
                 class="faq-icon shrink-0 text-xl leading-none text-amber-400 transition-transform"
@@ -1028,7 +1295,8 @@
               As tentativas anteriores provavelmente falharam por falta de
               estrutura, não por falta de força de vontade. Aqui você segue um
               caminho pronto, um passo por dia, pensado para funcionar mesmo nos
-              dias ruins — é exatamente para quem já tentou sozinho antes e não conseguiu.
+              dias ruins — é exatamente para quem já tentou sozinho antes e não
+              conseguiu.
             </p>
           </details>
 
@@ -1055,7 +1323,7 @@
         <div class="fade-in-element mt-12 text-center">
           <p class="text-lg font-extrabold leading-snug sm:text-xl">
             Mais um mês de abandono e sofrimento<br />
-            ou 30 dias de paz e prosperidade?
+            ou 30 dias para mudar sua vida:
           </p>
           <a
             id="pay4"
@@ -1084,21 +1352,11 @@
     <!-- ============================================================
          RODAPÉ
     ============================================================ -->
-    <footer class="border-t border-slate-800 bg-slate-950 px-5 py-10">
+    <footer class="border-t border-slate-800 bg-slate-950 px-5 py-6">
       <div class="mx-auto max-w-3xl text-center">
-
-        <p class="mt-6 text-xs text-slate-500">
+        <p class="text-xs text-slate-500">
           © <span id="ano"></span> 30 Dias Para Sair do Fundo do Poço. Todos os
           direitos reservados.
-        </p>
-        <p class="mt-2 text-xs text-slate-600">
-          <a href="./politica-de-privacidade.html" class="hover:text-slate-400"
-            >Política de Privacidade</a
-          >
-          ·
-          <a href="./termos-de-uso.html" class="hover:text-slate-400"
-            >Termos de Uso</a
-          >
         </p>
       </div>
     </footer>
@@ -1109,13 +1367,13 @@
     <script>
       window.LP_CONFIG = {
         // 1) Link do checkout (Hotmart, Kiwify, Eduzz, Monetizze...)
-        CHECKOUT_URL: "https://pay.hotmart.com/SEU-CODIGO-AQUI",
+        CHECKOUT_URL: "https://pay.kiwify.com.br/SzhQL9a",
 
         // 2) Vídeo local (coloque o arquivo na pasta /video)
         VIDEO_SRC: "video/apresentacao.mp4",
 
         // 3) Thumb/capa do vídeo (coloque o arquivo na pasta /img)
-        VIDEO_POSTER: "img/video-thumb.png",
+        VIDEO_POSTER: "img/video-thumb.webp",
 
         // 4) Meta Pixel — deixe "" para desativar
         FB_PIXEL_ID: "",
@@ -1175,6 +1433,62 @@
           track("ViewContent", { content_name: "video_vsl" });
         });
 
+        // --- Carrossel do criador ---
+        var carousel = document.getElementById("criador-carousel");
+        if (carousel) {
+          var slides = carousel.querySelectorAll(".carousel-slide");
+          var dots = document.querySelectorAll("#criador-dots .carousel-dot");
+          var current = 0;
+
+          var showSlide = function (i) {
+            current = (i + slides.length) % slides.length;
+            slides.forEach(function (s, k) {
+              s.classList.toggle("is-active", k === current);
+            });
+            dots.forEach(function (d, k) {
+              d.classList.toggle("is-active", k === current);
+              d.setAttribute("aria-current", k === current ? "true" : "false");
+            });
+          };
+
+          carousel
+            .querySelector("[data-carousel-prev]")
+            .addEventListener("click", function () {
+              showSlide(current - 1);
+            });
+          carousel
+            .querySelector("[data-carousel-next]")
+            .addEventListener("click", function () {
+              showSlide(current + 1);
+            });
+          dots.forEach(function (d, k) {
+            d.addEventListener("click", function () {
+              showSlide(k);
+            });
+          });
+
+          // Arrastar no celular
+          var touchX = null;
+          carousel.addEventListener(
+            "touchstart",
+            function (e) {
+              touchX = e.changedTouches[0].clientX;
+            },
+            { passive: true },
+          );
+          carousel.addEventListener(
+            "touchend",
+            function (e) {
+              if (touchX === null) return;
+              var delta = e.changedTouches[0].clientX - touchX;
+              if (Math.abs(delta) > 40)
+                showSlide(current + (delta < 0 ? 1 : -1));
+              touchX = null;
+            },
+            { passive: true },
+          );
+        }
+
         // --- Animação de entrada ---
         var els = document.querySelectorAll(".fade-in-element");
         if ("IntersectionObserver" in window) {
@@ -1187,7 +1501,7 @@
                 }
               });
             },
-            { threshold: 0.1 }
+            { threshold: 0.1 },
           );
           els.forEach(function (el) {
             obs.observe(el);
@@ -1260,7 +1574,7 @@
           window,
           document,
           "script",
-          "https://connect.facebook.net/pt_BR/fbevents.js"
+          "https://connect.facebook.net/pt_BR/fbevents.js",
         );
 
         fbq("init", id);

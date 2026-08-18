@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://SEUDOMINIO.com.br/trintadias/sitemap.xml
+Sitemap: https://30dias-para-sair-do-fundo-do-poco.com/sitemap.xml
